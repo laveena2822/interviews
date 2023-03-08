@@ -3,7 +3,7 @@ public with sharing class Controller {
     @AuraEnabled(cacheable=true)
     public static QuoteDto getQuoteByQuoteId(Id quoteId){
         try {
-            Quote__c quote = [SELECT Id, Name, EndDate__c, StartDate__c FROM Quote__c WHERE Id=:quoteId];
+            Quote__c quote = [SELECT Id, Name, EndDate__c, StartDate__c, TotalQuotedAmount__c FROM Quote__c WHERE Id=:quoteId];
             QuoteDto dto = new QuoteDto(quote);
             return dto;
         } catch (Exception e) {
