@@ -6,4 +6,7 @@
     value={quoteData.endDate}
     time-zone="UTC"
   ></lightning-formatted-date-time>
+  <lightning-input label="Start Date" type="Date" value={quoteData.startDate} data-fields="start"></lightning-input>
+  <lightning-input label="End Date" type="Date" value={quoteData.endDate} data-fields="end"></lightning-input>
+  <lightning-button variant="brand" label="Save" onclick={handleClick} ></lightning-button>
 </template>

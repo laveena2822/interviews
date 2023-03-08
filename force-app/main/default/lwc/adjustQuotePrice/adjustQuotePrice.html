@@ -1,7 +1,11 @@
 <!-- Adjust Quote Price -->
 <template>
-  <lightning-input-field
-    field-name={adjustedAmountLabel}
-    value={adjustedAmount}
-  ></lightning-input-field>
+  <lightning-modal-header label="Adjust Quote Price"></lightning-modal-header>
+    <lightning-modal-body> <lightning-input-field
+      field-name={adjustedAmountLabel}
+      value={adjustedAmount}
+    ></lightning-input-field></lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button label="OK" onclick={handleOkay}></lightning-button>
+    </lightning-modal-footer>
 </template>

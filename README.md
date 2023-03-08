@@ -8,3 +8,9 @@
 
 
 By following these instructions, you'll be able to set up your development environment and start working on the project right away. Let us know if you have any questions or issues with the setup process.
+
+# Approach used
+1. Used the QuoteDto class as a wrapper created fields in that class that are required and pass there values from constructor.
+2. Created a controller class listed methods there to get the data and update the data.
+3. Make changes in the lwc component according to the requirement first fetched the data using wire and then updated the data on click of save button.
+4. Also I have tried to approach the dialog box task Till the time I was only able to open the model used adjustQuotePrice as a modal component.
